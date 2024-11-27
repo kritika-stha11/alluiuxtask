@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .box {
+        border: 2px solid red;
+        height: 900px;
+        width: 300px;
+        position: relative;
+    }
+
+    .minibox {
+        height: 150px;
+        width: 150px;
+        border: 2px solid black;
+        text-align: center;
+        align-content: center;
+        font-size: large;
+    }
+
+    #static{
+        position: static;
+        margin-top: 3rem;
+    }
+
+    #relative{
+        position: relative;
+        top: 0;
+        right: 0;
+        background-color: rgb(61, 108, 108);
+        z-index: -3;
+    }
+    
+    #absolute{
+        position: absolute;
+        top: 3rem;
+        background-color: beige;
+        z-index: -1;
+    }
+
+    #fixed{
+        background-color: brown;
+        top: 3rem;
+        position: fixed;
+        z-index: -3;
+    }
+
+    #sticky{
+        background-color: blue;
+
+    }
+</style>
+<body>
+    
+
+    <h1>position Types:</h1>
+
+    <ol>
+        <li>static(default position)</li>
+        <li>relative(owm position)</li>
+        <li>absolute(relative)</li>
+        <li>fixed(scroll)</li>
+        <li>sticky(scroll)</li>
+    </ol>
+
+
+    <div class="box">
+        <div class="minibox" id="static">static</div>
+        <div class="minibox" id="relative">relative</div>
+        <div class="minibox" id="absolute">absolute</div>
+        <div class="minibox" id="fixed">fixed</div>
+        <div class="minibox" id="sticky">sticky</div>
+    </div>
+</body>
+</html>

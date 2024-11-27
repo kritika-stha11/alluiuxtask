@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: coral;
+            position: relative;
+            animation-name: movebox;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes movebox {
+            0%{
+                background-color: green;
+                left: 0;
+                top: 0;
+
+            }
+            25%{
+                background-color: lightgrey;
+                left: 500px;
+                top: 0;
+            }
+            50%{
+                background-color: aliceblue;
+                top: 500px;
+                left: 500px;
+            }
+            75%{
+                background-color: lightcyan;
+                top: 500px;
+                left: 0;
+            }
+            100%{
+                background-color: black;
+                top: 0;
+                left: 0;
+            }
+
+            
+        }
+    </style> -->
+
+    <style>
+        .box{
+            border-style: solid; 
+        }
+
+        .smallbox{
+            height: 15px;
+            width: 380px;
+            border-style: solid;
+            margin: 5px;
+            animation-name: movebox; 
+            animation-duration: 4s; 
+            position: relative;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes movebox {
+            0%{
+                background-color: green;
+                width: 0px;
+            }
+            25%{
+                background-color: lightgrey;
+                width: 25%;
+            }
+            50%{
+                background-color: aliceblue;
+                width: 50%;
+            }
+            75%{
+                background-color: lightcyan;
+                width: 75%;
+            }
+            100%{
+                background-color: black;
+                width: 100px;
+            }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="smallbox">
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+transform 
